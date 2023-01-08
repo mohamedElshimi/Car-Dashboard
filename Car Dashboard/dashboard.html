@@ -1,0 +1,234 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='dashboard.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <div class="header">
+            <img class="logo" src="assets\motiv_logo_black.png" alt="Motiv Logo">
+            <input type="search" id="search" placeholder="Search or Type">              
+            <div class="profile">
+                <i id="noti" class="fa fa-bell-o"></i>
+                <img class="profilePic" src="assets\profile.png" alt="profile">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="sidebar">
+                <button onclick="booking.html" id="dash">
+                    <i class="fa fa-dashboard"></i>
+                    <h4>Dashboard</h4>
+                </button>
+                <button class="other" id="assets">
+                    <i class="fa fa-picture-o"></i>
+                    <h4>Assets</h4>
+                </button>
+                <button onclick="window.location.href='file:///E:/TONY/Project/Car%20Dashboard/booking.html'" class="other" id="booking">
+                    <i class="fa fa-car"></i>
+                    <h4>Booking</h4>
+                </button>
+                <button class="other" id="sell">
+                    <i class="fa fa-shopping-bag"></i>
+                    <h4>Sell Cars</h4>
+                </button>
+                <button class="other" id="buy">
+                    <i class="fa fa-cart-plus"></i>
+                    <h4>Buy Cars</h4>
+                </button>
+                <button class="other" id="services">
+                    <i class="fa fa-support"></i>
+                    <h4>Services</h4>
+                </button>
+                <button class="other" id="calender">
+                    <i class="fa fa-calendar"></i>
+                    <h4>Calender</h4>
+                </button>
+                <button class="other" id="messages">
+                    <i class="fa fa-comment-o"></i>
+                    <h4>Messages</h4>
+                </button>
+                <div class="logout">
+                    <button class="other" id="Settings">
+                        <i class="fa fa-gear"></i>
+                        <h4>Settings</h4>
+                    </button>
+                    <button class="other" id="logout">
+                        <i class="fa fa-sign-out"></i>
+                        <h4>Logout</h4>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="dashboard">
+                <div class="progress">
+                    <div id="energy" class="p-child">
+                        <img class="p-img" src="assets\energy.png" alt="energy">
+                        <h3 id="e-h">Energy</h3>
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="45, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">45%</text>
+                            </svg>
+                          </div>
+                    </div>
+                    <div id="light" class="p-child">
+                        <img class="p-img" src="assets\range.png" alt="energy">
+                        <h3 id="r-h">Range</h3>
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart bink">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="50, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage" style="fill: black;">175k%</text>
+                            </svg>
+                          </div>
+                    </div>
+                    <div id="light" class="p-child">
+                        <img class="p-img" src="assets\break.png" alt="energy">
+                        <h3 id="r-h">Break fluid</h3>
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart purple">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="9, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage" style="fill: black;">9%</text>
+                            </svg>
+                          </div>
+                    </div>
+                    <div id="light" class="p-child">
+                        <img class="p-img" src="assets\tire.png" alt="energy">
+                        <h3 id="r-h">Tire Wear</h3>
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart yellow">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="25, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage" style="fill: black;">25%</text>
+                            </svg>
+                          </div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div id="light" class="mc-stat">
+                        <h3>Miles Statistics</h3>
+                        <div class="filter">
+                            <button class="ch" id="day">Day</button>
+                            <button class="ch" id="month">Month</button>
+                            <button class="ch" id="year">Year</button>
+                            <h6>256 Miles</h6>
+                        </div>
+                        <div class="his">
+                            <canvas id="histogram"></canvas>
+                        </div>
+                    </div>
+                    <div id="light" class="mc-stat">
+                        <h3>Car Statistics</h3>
+                        <div class="filter">
+                            <h6>20 February 2022</h6>
+                            <button class="ch" id="day">Day</button>
+                            <button class="ch" id="month">Month</button>
+                            <button class="ch" id="year">Year</button>
+                        </div>
+                        <div class="chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div id="light" class="rec">
+                        <div class="h-rec">
+                            <i class="fa fa-recycle"></i>
+                            <h5>64% Recommend</h5>
+                        </div>
+                        <img id="cars" src="assets\por4.png" alt="Car">
+                        <h5>Porsche 911 Carrera</h5>
+                        <div class="e-rec">
+                            <i class="fa fa-refresh"></i>
+                            <h6>132k</h6>
+                            <i class="fa fa-gear"></i>
+                            <!-- <i class="fa fa-file-"></i> -->
+                            <h6>$32/h</h6>
+                        </div>
+                    </div>
+                    <div id="light" class="rec">
+                        <div class="h-rec">
+                            <i class="fa fa-recycle"></i>
+                            <h5>74% Recommend</h5>
+                        </div>
+                        <img id="cars" src="assets\por4.png" alt="Car">
+                        <h5>Porsche 911 Carrera</h5>
+                        <div class="e-rec">
+                            <i class="fa fa-refresh"></i>
+                            <h6>130k</h6>
+                            <i class="fa fa-gear"></i>
+                            <!-- <i class="fa fa-file-"></i> -->
+                            <h6>$28/h</h6>
+                        </div>
+                    </div>
+                    <div id="light" class="rec">
+                        <div class="h-rec">
+                            <i class="fa fa-recycle"></i>
+                            <h5>74% Recommend</h5>
+                        </div>
+                        <img id="cars" src="assets\por4.png" alt="Car">
+                        <h5>Porsche 911 Carrera</h5>
+                        <div class="e-rec">
+                            <i class="fa fa-refresh"></i>
+                            <h6>130k</h6>
+                            <i class="fa fa-gear"></i>
+                            <!-- <i class="fa fa-file-"></i> -->
+                            <h6>$28/h</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src='dashboard.js'></script>
+</body>
+</html>

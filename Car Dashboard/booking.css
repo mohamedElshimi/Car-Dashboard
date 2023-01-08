@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.project{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+}
+.logo{
+    width: 5%;
+    height: 5%;
+    padding-left: 5%;
+}
+#noti{
+    margin-left: 20%;
+}
+.profilePic{
+    width: 20%;
+    height: 60%;
+    margin-left: 20px;
+}
+.profile{
+    width: 200px;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+#search{
+    margin-left: 15%;
+    width: 40%;
+    height: 40px;
+    background-color: #F5F4F6;
+    border: none;
+    border-radius: 5px;
+}
+input::placeholder {
+    margin-left: 20px;
+}
+.footer{
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    
+}
+i{
+    display: inline-block;
+} 
+ h4{
+    display: inline-block;
+}
+button{
+    width: 80%;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 7px ;
+    height: 30px;
+}
+button :hover{
+    cursor: pointer;
+}
+.other{
+    background-color: white;
+}
+#booking{
+    background-color: #F3F5F8;
+}
+.dashboard{
+    width: 80%;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+.logout{
+    margin-top: 50%;
+}
+#book{
+    margin-top: 1%;
+    margin-left: 20px;
+}
+.filter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter1{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 45%;
+}
+.filter2{
+    margin-right: 4%;
+    margin-top: 2%;
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.row{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.child{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+}
+.h-c{
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+.cars{
+    width: 80%;
+    height: 60%;
+}
+.e-c{
+    display: flex;
+    justify-content: space-around;
+}
+.fa-heart {
+    color: red;
+}
